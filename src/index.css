@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.button {
+  background-color: #000;
+  padding: .5em 1em;
+  margin: .5em;
+  color: #fff;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: #efefef;
+  cursor: pointer;
+}
+
+.section-title {
+  font-family: 'Castoro';
+  font-size: 56px;
+}
+
+.section-component {
+  margin: 10em;
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+
+.about-section {
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+  	flex-flow: column;
+}
+
+.about-section-title {
+	font-family: 'Castoro';
+	font-size: 72px;
+}
+
+.about-section-description {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.about-section-signature {
+	font-family: 'Dawning of a New Day', cursive;
+	font-size: 2em;
+	padding:  .3em;
+}
+
+.about-section-links {
+	display: flex;
+	align-items: center;
+}

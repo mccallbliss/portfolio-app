@@ -1,0 +1,19 @@
+[{
+	"title": "davvn website",
+	"created": "2020",
+	"description": "Website for my band davvn, built in HTML, CSS, Javascript",
+	"id": "davvn",
+	"category": [
+		"branding",
+		"development"
+	]
+}, {
+	"title": "Andrea Stolpe website & branding",
+	"created": "2020",
+	"description": "Built songwriting branding and website for Andrea Stolpe, monitored analytics",
+	"id": "andrea-stolpe",
+	"category": [
+		"branding",
+		"development"
+	]
+}]

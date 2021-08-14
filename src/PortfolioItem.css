@@ -1,0 +1,25 @@
+.portfolio-item {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.portfolio-item-about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.portfolio-item-img {
+	background-color: red;
+	width: 500px;
+	height: 300px;
+}
+
+.portfolio-item-title {
+	font-size: 1em;
+}
+
+.portfolio-item-description {
+	font-size: 1em;
+}

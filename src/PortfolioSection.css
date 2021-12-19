@@ -20,7 +20,8 @@
 }
 
 .portfolio-section-projects {
-	display: inline-flex;
-	flex-wrap: wrap;
-	flex-direction: row;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
 }

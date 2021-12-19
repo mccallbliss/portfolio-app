@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Navigation from './Navigation';
+import HelloSection from './HelloSection';
 import AboutSection from './AboutSection';
 import PortfolioSection from './PortfolioSection';
 import ContactSection from './ContactSection';
@@ -13,10 +13,10 @@ function App() {
     <div className="App">
       <header className="app-header">
         <Navigation/>
-        <div className="section-title">McCall Bliss</div>
+        <HelloSection/>
       </header>
-      <AboutSection/>
       <PortfolioSection/>
+      <AboutSection/>
       <ContactSection/>
       <Footer/>
     </div>

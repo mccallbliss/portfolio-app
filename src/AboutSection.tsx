@@ -1,12 +1,11 @@
 import React from 'react';
 import './AboutSection.css';
+import SectionTitle from './SectionTitle';
 
 function AboutSection() {
   return (
     <div className="about-section section-component">
-      <div className="section-title">
-        About Me
-      </div>
+      <SectionTitle title={'About Me'}/>
       <div className="about-section-description">
       	I love creativity. I will take on anything that involves wracking my brain for a unique and innovative way to solve a problem. 
       	It's why I majored in Computer Science at Tufts University with a minor in Multimedia Arts. I try to use a combination of programming, 

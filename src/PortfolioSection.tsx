@@ -1,11 +1,13 @@
 import React from 'react';
 import './PortfolioSection.css';
 import PortfolioItem, {PortfolioItemObject} from './PortfolioItem';
+import SectionTitle from './SectionTitle';
+
 import data from './data/projects.json';
 
 function renderCategories(data: PortfolioItemObject[]) {
 	var categories: string[] = [];
-	data.map(item => {
+	data.forEach(item => {
 		for (var i = 0; i < item.category.length; i++) {
 			if (categories.indexOf(item.category[i]) === -1) {
 				categories.push(item.category[i]);
@@ -22,9 +24,7 @@ function renderCategories(data: PortfolioItemObject[]) {
 export default function PortfolioSection() {
 	return (
 		<div className="portfolio-section section-component">
-			<div className="section-title">
-				Portfolio
-			</div>
+      		<SectionTitle title={'Work'}/>
 			{renderCategories(data)}
 			<div className="portfolio-section-projects">
 				{data.map(project => <PortfolioItem item={project}/>)}

@@ -1,0 +1,29 @@
+@use 'variables';
+
+.app-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 2em 5em;
+
+	.copyright {
+		font-size: 0.7em;
+	}
+
+	.footer-socials {
+		.footer-social {
+			padding: 0.5em;
+		}
+
+		.social-name {
+			display: none;
+		}
+
+		img {
+			width: 15px;
+			height: 15px;
+		}
+		
+	}
+
+}

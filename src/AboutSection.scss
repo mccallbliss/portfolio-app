@@ -1,0 +1,37 @@
+@use 'variables';
+
+.about-section {
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+  	flex-flow: column;
+  	margin: 5em;
+
+  	.about-section-title {
+		font-family: 'Castoro';
+		font-size: 5em;
+	}
+
+	.about-section-description {
+		font-size: 1em;
+		line-height: 1.8em;
+	}
+
+	.about-section-signature {
+		font-family: 'Roboto';
+		font-size: 2em;
+		padding:  .3em;
+	}
+
+	.about-section-links {
+		display: flex;
+		align-items: center;
+	}
+
+}
+
+@media (min-width: variables.$breakpoint-tablet) {
+	.about-section {
+		margin: 5em 20em;
+	}
+}

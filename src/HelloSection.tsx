@@ -1,11 +1,13 @@
 import React from 'react';
+import './HelloSection.scss';
 
 export default function HelloSection() {
 	return (
 		<div className="hello-section section-component">
-			<div className="intro-section">Hi I'm McCall Bliss</div>
-			<div className="intro-title">Building digital products, brands, and experience</div>
-			<div className="intro-button">Connect with me</div>
+			<span className="hello-section-text">
+				Hi 👋 I'm McCall Bliss - a software engineer with a passion for creativity and clean design. I do UI &amp; UX design, branding, websites, and front-end development.
+			</span>
+			<span className="hello-section-divider" />
 		</div>
 	);
 }

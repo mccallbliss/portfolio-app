@@ -1,0 +1,92 @@
+@use 'variables';
+
+.contact-section {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 5em 10em;
+
+	.contact-form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 20em;
+
+		input {
+			height: 1.5em;
+			width: 100%;
+			margin: .5em;
+		}
+
+		textarea {
+			height: 3em;
+			width: 100%;
+			margin: .5em;
+		}
+
+		button {
+			height: 2.5em;
+			width: 100%;
+			margin: .5em;
+		}
+		input {
+		    font-size: 1em;
+		    line-height: 1em;
+		    padding: .2em 1em;
+		    width: 100%;
+		    min-height: 2em;
+		    border: unset;
+		    border-radius: 4px;
+		    outline-color: rgb(84 105 212 / 0.5);
+		    background-color: rgb(255, 255, 255);
+		    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+		}
+
+		textarea {
+		    font-size: 1em;
+		    line-height: 1em;
+		    padding: .5em 1em;
+		    width: 100%;
+		    min-height: 5em;
+		    border: unset;
+		    font-family: unset;
+		    border-radius: 4px;
+		    outline-color: rgb(84 105 212 / 0.5);
+		    background-color: rgb(255, 255, 255);
+		    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+		}
+
+		button {
+		    background-color: rgb(84, 105, 212);
+		    border-radius: 4px;
+		    outline-color: rgb(84 105 212 / 0.5);
+		    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+		                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+		    color: #fff;
+		    font-weight: 600;
+		    cursor: pointer;
+		}
+	}
+
+	.hidden {
+		display: none;
+	}
+}

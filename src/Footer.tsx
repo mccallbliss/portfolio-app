@@ -1,10 +1,11 @@
 import React from 'react';
-import './Footer.css';
+import './Footer.scss';
 import data from './data/socials.json';
 
 import FacebookIcon from './images/facebook.svg';
 import LinkedInIcon from './images/youtube.svg';
 import InstagramIcon from './images/instagram.svg';
+import TwitterIcon from './images/twitter.svg';
 
 function renderIcon({site, url}: SocialLink) {
 	switch (site) {
@@ -15,13 +16,16 @@ function renderIcon({site, url}: SocialLink) {
 		case 'instagram':
 			return <img src={InstagramIcon} alt="Instagram" />
 		case 'twitter':
-			return <img src={InstagramIcon} alt="Twitter" />
+			return <img src={TwitterIcon} alt="Twitter" />
 	}
 }
 
 export default function Footer() {
 	return (
 		<div className="app-footer">
+			<div className="copyright">
+				@2021 by McCall Bliss
+			</div>
 			<div className="footer-socials">
 				{data.map(item => {
 					return (

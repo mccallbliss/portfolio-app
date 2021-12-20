@@ -1,0 +1,41 @@
+@use 'variables';
+
+.hello-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 7em 5em 2em 5em;
+
+    .hello-section-text {
+        font-size: 2em;
+        line-height: 2em;
+    }
+
+    .hello-section-divider {
+        height: 5em;
+        width: .1em;
+        background-color: black;
+        display: block;
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: variables.$breakpoint-mobile) {
+    .hello-section {
+        margin: 5em 5em;
+    }
+}
+
+@media (min-width: variables.$breakpoint-tablet) {
+    .hello-section {
+        margin: 5em 8em;
+    }
+}
+
+@media (min-width: variables.$breakpoint-laptop) {
+    .hello-section {
+        margin: 7em 20em 2em 20em;
+    }
+}

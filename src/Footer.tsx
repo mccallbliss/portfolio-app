@@ -24,7 +24,7 @@ export default function Footer() {
 	return (
 		<div className="app-footer">
 			<div className="copyright">
-				@2021 by McCall Bliss
+				@2024 by McCall Bliss
 			</div>
 			<div className="footer-socials">
 				{data.map(item => {

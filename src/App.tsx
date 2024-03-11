@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.scss';
 
 import HeaderSection from './HeaderSection';
@@ -9,6 +9,10 @@ import ContactSection from './ContactSection';
 import Footer from './Footer';
 
 function App() {
+	useEffect(() => {
+		document.title = 'McCall Bliss - Portfolio';
+	}, []);
+
 	return (
 		<div className="App">
 			<HeaderSection/>

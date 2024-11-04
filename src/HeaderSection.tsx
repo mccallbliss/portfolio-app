@@ -31,7 +31,7 @@ export default function HeaderSection() {
 				<ul className="menu-nav">
 					{navItems.map(item => renderNavItem(item))}
 				</ul>
-				<div className="nav-item-link" onClick={() => window.open('/assets/resume.pdf', '_blank')}>Resume</div>
+				<div className="nav-item-link" onClick={() => window.open('/assets/resume-updated.pdf', '_blank')}>Resume</div>
 			</header>
 	  </div>
 	);

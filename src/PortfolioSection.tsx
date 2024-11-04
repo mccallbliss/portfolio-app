@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState, useMemo} from 'react';
 import './PortfolioSection.scss';
 import PortfolioItem, {PortfolioItemObject} from './PortfolioItem';
 import SectionTitle from './SectionTitle';
@@ -16,7 +16,7 @@ function renderCategories(categories: string[]) {
 export default function PortfolioSection() {
 	const [categories, setCategories] = useState<string[]>([]);
 
-	useEffect(() => {
+	useMemo(() => {
 		var categoryItems: string[] = [];
 		data.forEach(item => {
 			for (var i = 0; i < item.category.length; i++) {

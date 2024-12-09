@@ -18,7 +18,7 @@ export default function PortfolioItem({item} : PortfolioItemProps) {
 					<div className="portfolio-item-title">{item.title}</div>
 					<div className="portfolio-item-created">Created {item.created}</div>
 					<div className="portfolio-item-description">{item.description}</div>  
-					{item.url && <a href="{item.url}" target="_blank" rel="noopener noreferrer" className="portfolio-item-btn">Explore</a>}
+					{item.url && <a href={item.url} target="_blank" rel="noopener noreferrer" className="portfolio-item-btn">Explore</a>}
 				</div>
 			</div>
 		</div>

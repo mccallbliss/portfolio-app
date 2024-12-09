@@ -30,7 +30,7 @@ export default function PortfolioSection() {
 
 	return (
 		<div className="portfolio-section section-component">
-      		<SectionTitle title={'Work'}/>
+      		<SectionTitle title={'Projects'}/>
 			{categories && renderCategories(categories)}
 			<div className="portfolio-section-projects">
 				{data.map(project => <PortfolioItem item={project}/>)}

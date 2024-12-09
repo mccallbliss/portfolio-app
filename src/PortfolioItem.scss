@@ -8,8 +8,9 @@
 }
 
 .portfolio-item-card {
-    width: 22em;
+    width: 30em;
     height: 22em;
+	border-radius: 12px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -22,7 +23,7 @@
 .portfolio-item-overlay {
 	width: 100%;
 	height: 100%;
-	padding: 1em;
+	padding: 2.6em;
 	line-height: 1.8em;
     text-align: center;
     opacity: 0;

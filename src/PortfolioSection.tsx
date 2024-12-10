@@ -1,4 +1,4 @@
-import React, {useState, useMemo} from 'react';
+import {useState, useMemo} from 'react';
 import './PortfolioSection.scss';
 import PortfolioItem from './PortfolioItem';
 import SectionTitle from './SectionTitle';

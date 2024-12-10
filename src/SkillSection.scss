@@ -1,0 +1,38 @@
+@use 'variables';
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+  
+.skill-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+  
+.skill-bar {
+    height: 14px;
+    background: #282828;
+    border-radius: 3px;
+}
+  
+.skill-per {
+    height: 14px;
+    background: variables.$bliss-pink;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+  
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}

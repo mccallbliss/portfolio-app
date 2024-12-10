@@ -6,6 +6,7 @@ import HelloSection from './HelloSection';
 import AboutSection from './AboutSection';
 import PortfolioSection from './PortfolioSection';
 import ContactSection from './ContactSection';
+import SkillSection from './SkillSection';
 import Footer from './Footer';
 
 function App() {

@@ -1,0 +1,29 @@
+[{
+	"name": "React",
+	"type": "framework",
+	"proficiency": 4
+}, {
+	"name": "Redux",
+	"type": "framework",
+	"proficiency": 4
+}, {
+    "name": "Angular.js",
+	"type": "framework",
+	"proficiency": 3
+}, {
+    "name": "Java",
+	"type": "language",
+	"proficiency": 4
+}, {
+    "name": "CSS",
+	"type": "",
+	"proficiency": 5
+}, {
+    "name": "C++",
+	"type": "language",
+	"proficiency": 4
+}, {
+    "name": "HTML5",
+	"type": "language",
+	"proficiency": 4
+}]

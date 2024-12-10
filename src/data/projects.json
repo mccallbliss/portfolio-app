@@ -4,7 +4,8 @@
 	"description": "Website for my band davvn, designed and built on Shopify",
 	"id": "davvn",
 	"category": [
-		"branding"
+		"branding", 
+		"design"
 	],
 	"url": "https://davvn.com"
 }, {
@@ -14,7 +15,8 @@
 	"id": "andrea-stolpe",
 	"category": [
 		"branding",
-		"development"
+		"development", 
+		"design"
 	],
 	"url": "https://andreastolpe.com"
 }]

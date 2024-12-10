@@ -32,16 +32,17 @@ export default function PortfolioSection() {
 			}
 		});
 		setCategories(categoryItems);
-	}, []);
+	}, [projects]);
 
 	return (
 		<div className="portfolio-section section-component">
       		<SectionTitle title={'Projects'}/>
 			{categories && (
 				<div className="portfolio-section-categories">
+					<button className="portfolio-section-category button-boxed" data-selected={'all' === selectedCategory} role="button" onClick={() => setSelectedCategory('all')}>all</button>
 					{categories.map(category => (
-						<button className="portfolio-section-category" onClick={() => setSelectedCategory(category as Category)}>{category}</button>)
-					)}
+						<button className="portfolio-section-category button-boxed" data-selected={category === selectedCategory} role="button" onClick={() => setSelectedCategory(category as Category)}>{category}</button>
+					))}
 				</div>
 			)}
 			<div className="portfolio-section-projects">

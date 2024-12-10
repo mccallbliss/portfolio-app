@@ -15,11 +15,16 @@
 			padding: 0.5em;
 		}
 
+		.footer-social:hover svg {
+			fill: variables.$bliss-pink;
+			color: variables.$bliss-pink;
+		}
+
 		.social-name {
 			display: none;
 		}
 
-		img {
+		svg {
 			width: 15px;
 			height: 15px;
 		}

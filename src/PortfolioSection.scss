@@ -26,24 +26,7 @@
 	}
 
 	.portfolio-section-category {
-		background-color: #000;
-		border: none;
-		color: white;
-		padding: .8em 1.5em;
-		margin: 10px;
-		border-radius: 5px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		text-transform: capitalize;
-		text-decoration: none;
-	}
-
-	.portfolio-section-category:hover {
-		cursor: pointer;
-		animation: scale 5s ease-in-out;
-        -webkit-animation: scale 5s ease-in-out;
+		margin: .4em;
 	}
 
 	.portfolio-section-projects {

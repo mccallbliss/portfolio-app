@@ -38,3 +38,60 @@
 		transform: rotate(360deg);
 	}
 }
+
+
+.button-boxed {
+	align-items: center;
+	background-color: #fff;
+	border: 2px solid #000;
+	box-sizing: border-box;
+	color: #000;
+	cursor: pointer;
+	display: inline-flex;
+	fill: #000;
+	font-family: Inter,sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	height: 48px;
+	justify-content: center;
+	letter-spacing: -.8px;
+	line-height: 24px;
+	min-width: 140px;
+	outline: 0;
+	padding: 0 17px;
+	text-align: center;
+	text-decoration: none;
+	transition: all .3s;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.button-boxed:focus {
+	color: #171e29;
+}
+
+.button-boxed:hover {
+	border-color: variables.$bliss-pink;;
+	fill: variables.$bliss-pink;;
+	color: variables.$bliss-pink;;
+}
+
+.button-boxed:active {
+	border-color: variables.$bliss-pink;;
+	fill: variables.$bliss-pink;;
+	color: variables.$bliss-pink;;
+}
+
+.button-boxed[data-selected="true"] {
+	background-color: variables.$bliss-pink;;
+	border-color: variables.$bliss-pink;;
+	color: #fff;
+	fill: variables.$bliss-pink;;
+}
+
+@media (min-width: 768px) {
+	.button-boxed {
+		min-width: 170px;
+	}
+}

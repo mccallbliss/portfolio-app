@@ -2,39 +2,21 @@ import React from 'react';
 import './Footer.scss';
 import data from './data/socials.json';
 
-import FacebookIcon from './images/facebook.svg';
-import LinkedInIcon from './images/youtube.svg';
-import InstagramIcon from './images/instagram.svg';
-import TwitterIcon from './images/twitter.svg';
-
-function renderIcon({site, url}: SocialLink) {
-	switch (site) {
-		case 'linkedin': 
-			return <img src={LinkedInIcon} alt="LinkedIn" />
-		case 'facebook':
-			return <img src={FacebookIcon} alt="Facebook" />
-		case 'instagram':
-			return <img src={InstagramIcon} alt="Instagram" />
-		case 'twitter':
-			return <img src={TwitterIcon} alt="Twitter" />
-	}
+function SocialIcon({ site, url, icon} : SocialLink) {
+	return (
+		<a href={url} className="footer-social">
+			<img src={icon} alt={site} />
+			<span className="social-name">{site}</span>
+		</a>
+	)
 }
 
 export default function Footer() {
 	return (
 		<div className="app-footer">
-			<div className="copyright">
-				@2024 by McCall Bliss
-			</div>
+			<div className="copyright">@2024 by McCall Bliss</div>
 			<div className="footer-socials">
-				{data.map(item => {
-					return (
-						<a href={item.url} className="footer-social">
-							{renderIcon(item)}
-							<span className="social-name">{item.site}</span>
-						</a>
-					);
-				})}
+				{data.map(item => <SocialIcon site={item.site} url={item.url} icon={item.icon} />)}
 			</div>
 		</div>
 	);
@@ -43,4 +25,5 @@ export default function Footer() {
 export interface SocialLink {
     site: string;
     url: string;
+	icon: string;
 }

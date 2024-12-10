@@ -4,8 +4,7 @@
 	"description": "Website for my band davvn, designed and built on Shopify",
 	"id": "davvn",
 	"category": [
-		"branding",
-		"development"
+		"branding"
 	],
 	"url": "https://davvn.com"
 }, {

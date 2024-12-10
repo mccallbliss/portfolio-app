@@ -1,5 +1,14 @@
 @use 'variables';
 
+@keyframes scale {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
 .portfolio-section {
 	display: flex;
 	justify-content: center;
@@ -16,11 +25,25 @@
 		height: 5em;
 	}
 
-	.portfolio-section-categories a {
-		text-transform: capitalize;
+	.portfolio-section-category {
+		background-color: #000;
+		border: none;
+		color: white;
+		padding: .8em 1.5em;
 		margin: 10px;
+		border-radius: 5px;
+		text-align: center;
 		text-decoration: none;
-		color: #000;
+		display: inline-block;
+		font-size: 16px;
+		text-transform: capitalize;
+		text-decoration: none;
+	}
+
+	.portfolio-section-category:hover {
+		cursor: pointer;
+		animation: scale 5s ease-in-out;
+        -webkit-animation: scale 5s ease-in-out;
 	}
 
 	.portfolio-section-projects {

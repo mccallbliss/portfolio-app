@@ -1,24 +1,30 @@
 import React, {useState, useMemo} from 'react';
 import './PortfolioSection.scss';
-import PortfolioItem, {PortfolioItemObject} from './PortfolioItem';
+import PortfolioItem from './PortfolioItem';
 import SectionTitle from './SectionTitle';
 
 import data from './data/projects.json';
 
-function renderCategories(categories: string[]) {
-	return (
-		<div className="portfolio-section-categories">
-			{categories.map(category => <a href={`#${category}`} >{category}</a>)}
-		</div>
-	);
+type Category = "branding" | "development" | "design";
+
+export interface PortfolioItemObject {
+	title: string;
+	created: string;
+	description: string;
+	id: string;
+	category: string[];
+	url?: string;
 }
 
 export default function PortfolioSection() {
+	const projects = useMemo(() => data, []);
+
 	const [categories, setCategories] = useState<string[]>([]);
+	const [selectedCategory, setSelectedCategory] = useState('all');
 
 	useMemo(() => {
-		var categoryItems: string[] = [];
-		data.forEach(item => {
+		let categoryItems: string[] = [];
+		projects.forEach(item => {
 			for (var i = 0; i < item.category.length; i++) {
 				if (categoryItems.indexOf(item.category[i]) === -1) {
 					categoryItems.push(item.category[i]);
@@ -31,9 +37,15 @@ export default function PortfolioSection() {
 	return (
 		<div className="portfolio-section section-component">
       		<SectionTitle title={'Projects'}/>
-			{categories && renderCategories(categories)}
+			{categories && (
+				<div className="portfolio-section-categories">
+					{categories.map(category => (
+						<button className="portfolio-section-category" onClick={() => setSelectedCategory(category as Category)}>{category}</button>)
+					)}
+				</div>
+			)}
 			<div className="portfolio-section-projects">
-				{data.map(project => <PortfolioItem item={project}/>)}
+				{projects.filter(project => selectedCategory === 'all' || project.category.includes(selectedCategory)).map(project => <PortfolioItem item={project}/>)}
 			</div>
 		</div>
 	);

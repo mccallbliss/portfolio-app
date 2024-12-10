@@ -1,13 +1,17 @@
 [{
 	"site": "twitter",
-	"url": "https://twitter.com/missmccallbliss"
+	"url": "https://twitter.com/missmccallbliss",
+	"icon": "./images/twitter.svg"
 }, {
 	"site": "instagram",
-	"url": "https://www.instagram.com/missmccallbliss/"
+	"url": "https://www.instagram.com/missmccallbliss/",
+	"icon": "./images/instagram.svg"
 }, {
 	"site": "linkedin",
-	"url": "https://www.linkedin.com/in/mccallbliss/"
+	"url": "https://www.linkedin.com/in/mccallbliss/",
+	"icon": "./images/linkedin.svg"
 }, {
 	"site": "github",
-	"url": "https://github.com/mccallbliss"
+	"url": "https://github.com/mccallbliss",
+	"icon": "./images/github.svg"
 }]

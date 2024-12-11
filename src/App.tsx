@@ -20,7 +20,6 @@ function App() {
 			<HelloSection/>
 			<PortfolioSection/>
 			<AboutSection />
-			<SkillSection />
 			<ContactSection />
 			<Footer/>
 		</div>

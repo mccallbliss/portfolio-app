@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './App.scss';
 
 import HeaderSection from './HeaderSection';
@@ -19,8 +19,9 @@ function App() {
 			<HeaderSection/>
 			<HelloSection/>
 			<PortfolioSection/>
-			<AboutSection/>
-			<ContactSection/>
+			<AboutSection />
+			<SkillSection />
+			<ContactSection />
 			<Footer/>
 		</div>
 	);

@@ -36,7 +36,7 @@ export default function SkillSection() {
     const skills: SkillObject[] = useMemo(() => data, []);
 
 	return (
-		<div className="skill-section section-component">
+		<div className="skill-section section-component animate-on-scroll">
             <SectionTitle title={'Skills'}/>
 			<span className="skill-section-text skills">
                 {skills.map(skill => <SkillItem item={skill} />)}

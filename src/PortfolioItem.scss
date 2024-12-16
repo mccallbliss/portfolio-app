@@ -1,50 +1,48 @@
 @use 'variables';
 
+@keyframes reveal {
+	from {
+		opacity: 0;
+	}
+}
+
+@keyframes scale-a-lil {
+	from {
+		scale: .75;
+	}
+}
+	
+@media (prefers-reduced-motion: no-preference) {
+	.portfolio-item {
+		animation: scale-a-lil linear both;
+		animation-timeline: view();
+		animation-range: 25vh 75vh;
+	}
+}
+
 .portfolio-item {
 	display: flex;
-	align-items: center;
 	flex-direction: column;
 	position: relative;
 }
 
-.portfolio-item-card {
-    width: 30em;
-    height: 22em;
+.portfolio-item a {
+	width: 40em;
+    height: 28em;
+	overflow: hidden;
 	border-radius: 12px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
 }
 
-.portfolio-item-overlay {
+.portfolio-img {
 	width: 100%;
 	height: 100%;
-	padding: 2.6em;
-	line-height: 1.8em;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(22em);
-    transition: all .3s ease;
-    cursor: pointer;
-    color:  white;
-    background: rgba(0,0,0,0.8);
-}
-
-.portfolio-item-overlay.info-visible {
-	display: flex;
-    opacity: 1;
-    transform: translateY(0);
+	object-fit: cover;
 }
 
 .portfolio-item-about {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
 }
 
 .portfolio-item-title {
